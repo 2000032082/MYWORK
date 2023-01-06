@@ -1,0 +1,54 @@
+
+<div style="text-align:center;">
+    <h1> hi Binding Data</h1>
+    Name:<input type="text" #username>
+    <input type="submit" value="CLICK"
+      (click)="abc(username.value)">
+
+      <br>
+
+      {{myname}}
+</div>
+
+
+<div style="text-align:center;">
+    <h1>
+        CACL
+    </h1>
+    Principal:<input type="text" #p><br>
+    Time:<input type="text" #t><br>
+   <!-- ROI:<input type="text" #r><br>-->
+   <select (change)="roi($event)">
+    <option>Loan type</option>
+    <option value="car">Car</option>
+    <option value="home">Home</option>
+    <option value="edu">Edu</option>
+    <option value="personal">Personal</option>
+   </select><br>
+    ROI:<input type="text" disabled value={{interest}}><br>
+    Total:<input type="text" value={{total}}><br>
+    EMI:<input type="text" value={{emi}}><br>
+    <br>
+
+    <input type="submit" value="calculate"
+    (click)="cal(p.value,t.value)">
+
+</div>
+<br>
+<br>
+
+
+<div style="text-align:center;">
+    <h1> report card</h1>
+   Telugu:<input type="text" #a><br>
+   Hindi:<input type="text" #b><br>
+   Maths:<input type="text" #c><br>
+   Science:<input type="text" #d><br>
+   English:<input type="text" #e><br>
+   s Science:<input type="text" #f><br>
+   Total:<input type="text"  disabled value="{{Total}}"><br>
+   Percentage:<input type="text"  disabled value="{{Percentage}}"><br>
+   Rank:<input type="text" disabled value="{{Rank}}"><br>
+   <input type="submit" value="CLICK"
+    (click)="reportcard(a.value,b.value,c.value,d.value,e.value,f.value)">
+</div>

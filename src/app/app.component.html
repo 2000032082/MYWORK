@@ -1,64 +1,30 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    
-    <div style="background-color: yellow;height: 200px;">
-           <div style="text-align: center;">
-            <h1>Hi Login Page </h1>
-               <h3>
-                <form>
-                    NAME :<input type="text"> <br> 
-                    Pass: <input type="password"><br><br>
-    
-                    <input type="submit" value="LOGIN">
-                   <input type="reset">
-                </form>
-               </h3>
-           </div>
 
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">KL university</a>
     </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Department <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Computer</a></li>
+          <li><a href="#">Civil</a></li>
+          <li><a href="#">Mech</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="gallary">Gallary</a></li>
+      <li><a routerLink="bind">Binding</a></li>
+      <li><a routerLink="directive">directive</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="signup"><span class="glyphicon glyphicon-user">Signup</span></a></li>
+      <li><a routerLink="login"><span class="glyphicon glyphicon-user">Login</span></a></li>
+    </ul>
+  </div>
+</nav>
 
-    <div style="background-color: lightskyblue;height: 500px;">
-          <div style="text-align: center;">
-            <h1> Hi Regitser Page </h1>
-            <h3>
-               <form>
-               
-                Name  : <input type="text" name="" id=""><br> 
-                pass : <input type="password"><br>
-                PHone : <input type="number"><br>
-                Email : <input type="email"><br>
-                DOB : <input type="date"><br>
-                MIN   : <input type="range"> :max <br>
-                Gender: 
-                <input type="radio" name="n1">: MALE 
-                <input type="radio" name="n1">: FEMALE 
-                <input type="radio" name="n1">: Others
-                <br>
-                Subject : 
-                    <input type="checkbox" checked>: JAVA
-                    <input type="checkbox">: C PP 
-                    <input type="checkbox">: Python
-                    <input type="checkbox">: MEAN 
-                    <input type="checkbox">: MERN 
-                <br>
-                Address : <textarea>
+<router-outlet></router-outlet>
+  
 
-                </textarea><br>
-                Resume : <input type="file"> <br>
-                Color : <input type="color">
-               <br><br><input type="submit" value="REGISTER">
-               <input type="reset">
-               </form>
-            </h3>
-          </div>
-
-    </div>
-</body>
-</html>
